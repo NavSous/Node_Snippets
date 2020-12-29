@@ -89,8 +89,7 @@ function combination(n, k){
 }
 combination(10, 4)
 module.exports = {print, arrsort, removefromarr, maxnumfirst, randper, removebyvalue, randsort, factorial, permutation, combination}
-=======
-//Randomly shuffle array
+
 function randshuffle(arr){
     for(let i = 0; i<arr.length; i++){
         let ran = rand.int(0, arr.length-1)
@@ -101,4 +100,4 @@ function randshuffle(arr){
     return arr;
 }
 module.exports = {print, arrsort, removefromarr, maxnum, randper, removebyvalue, randshuffle, rng}
->>>>>>> 3fe791da2073d3cc8490335dcd51e573b46e1832
+
