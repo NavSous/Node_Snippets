@@ -54,7 +54,7 @@ function arrsort(arr){
     }
     return arr;
 }
-<<<<<<< HEAD
+
 function randsort(arr){
     for(i in arr){
         x = rand.int(1, arr.length-1);
@@ -88,7 +88,7 @@ function combination(n, k){
     return c;
 }
 combination(10, 4)
-module.exports = {print, arrsort, removefromarr, maxnumfirst, randper, removebyvalue, randsort, factorial, permutation, combination}
+
 
 function randshuffle(arr){
     for(let i = 0; i<arr.length; i++){
