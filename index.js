@@ -99,5 +99,5 @@ function randshuffle(arr){
     }
     return arr;
 }
-module.exports = {print, arrsort, removefromarr, maxnum, randper, removebyvalue, randshuffle, rng}
+module.exports = {print, arrsort, removefromarr, maxnum, randper, removebyvalue, randshuffle, rng, combination, permutation, factorial}
 
