@@ -16,13 +16,13 @@ function rng(min, max){
 //Remove item from array by index
 function removefromarr(arr, index){
     arr.splice(index, 1);
-    print(arr)
+    
 }
 //Remove item from array by value
 function removebyvalue(arr, value){
     let z = arr.indexOf(value)
     arr.splice(z, 1)
-    print(arr)
+    
 }
 //Get the maximun number in an array
 function maxnum(arr){
@@ -63,7 +63,6 @@ function randsort(arr){
         arr[i] = arr[x];
         arr[x] = tmp;      
     }
-    print(arr)
     return arr
 }
 function factorial(int){
@@ -84,7 +83,6 @@ function combination(n, k){
     let b = factorial(k);
     let x = permutation(n, k);
     let c = x/b;
-    console.log(c);
     return c;
 }
 combination(10, 4)
