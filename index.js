@@ -35,7 +35,7 @@ function maxnum(arr){
     }
     return arr[0];
 }
-//Sort array from biggest to smallest
+//Sort integer array from biggest to smallest
 function arrsort(arr){
     let x = arr.length-1;
     let b = 0;
