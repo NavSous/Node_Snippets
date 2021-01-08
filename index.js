@@ -54,17 +54,7 @@ function arrsort(arr){
     }
     return arr;
 }
-
-function randsort(arr){
-    for(i in arr){
-        x = rand.int(1, arr.length-1);
-        let tmp = arr[i];
-        let tobe = arr[x];
-        arr[i] = arr[x];
-        arr[x] = tmp;      
-    }
-    return arr
-}
+//Factorial Calulation
 function factorial(int){
     let c = int;
     for(i=1; i<int; i++){
@@ -72,6 +62,7 @@ function factorial(int){
     }
     return c;
 }
+//Permutation Calculation
 function permutation(n, k){
     let b = factorial(n);
     let z = n - k;
@@ -79,15 +70,14 @@ function permutation(n, k){
     let perm = b/c;
     return perm;
 }
+//Combination Calculation
 function combination(n, k){
     let b = factorial(k);
     let x = permutation(n, k);
     let c = x/b;
     return c;
 }
-combination(10, 4)
-
-
+//Randomly shuffle an array
 function randshuffle(arr){
     for(let i = 0; i<arr.length; i++){
         let ran = rand.int(0, arr.length-1)
