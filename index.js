@@ -67,15 +67,26 @@ function permutation(n, k){
     let b = factorial(n);
     let z = n - k;
     let c = factorial(z);
-    let perm = b/c;
-    return perm;
+    let perm = b/c;  
+    if(n>=k){
+        return Math.round(perm);
+    }
+    else{
+        return 0;
+    }
 }
 //Combination Calculation
 function combination(n, k){
     let b = factorial(k);
     let x = permutation(n, k);
     let c = x/b;
-    return c;
+    if(n>=k){
+        return Math.round(c);
+    }
+    else{
+        return 0;
+    }
+    
 }
 //Randomly shuffle an array
 function randshuffle(arr){
@@ -87,5 +98,6 @@ function randshuffle(arr){
     }
     return arr;
 }
+print(combination(150,9))
 module.exports = {print, arrsort, removefromarr, maxnum, randper, removebyvalue, randshuffle, rng, combination, permutation, factorial}
 
