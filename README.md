@@ -1,6 +1,6 @@
 # 2020 Node Snippets
 
-These are some small helpful function for Node.js
+This package was made so I could learn how to publish NPM packages, and has some helpful functions for NodeJS.
 
 ### Features
 
